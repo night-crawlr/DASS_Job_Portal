@@ -1,0 +1,114 @@
+//For registering recruiter
+//POST request for register recruiter
+{
+    "name" : "recr1",
+    "email"  : "recr1@gmail.com",
+    "num" : 123,
+    "bio" : "Iam a boy",
+    "jobsId": [],
+    "pass" : "pass1"
+}
+
+//Yes this route is working register/recr/
+
+
+//Route for creating a job from recruiter
+
+{
+    "Name":"Frontend",
+    "maxapp":50,
+    "maxpo":13,
+    "date":{
+        "day":12,
+        "month":2,
+        "year":2000,
+        "min":34
+    },
+    "skillsreq":["ddfd","qqqq","aaa"],
+    "type":1,
+    "duration":3,
+    "salary":10000
+}
+
+//route worked
+
+
+
+//login
+{
+    "email":"recr4_edit",
+    "pass":"pass4"
+}
+
+//worked
+
+
+
+//Applicant register body
+{
+    "name":"app1",
+    "pass":"pass1",
+    "email":"app1@gmail.com",
+    "instName":["aaaa","sss","dd"],
+    "startY":[12,12,12],
+    "endY":[11,1,11],
+    "skills":["aaaa","ssss","dddd"]
+}
+
+//YEs working.
+
+
+
+//aplicant registering an application
+{
+    "recid":"600811afca61046395d1f6ca",
+    "applid":"60081217ca61046395d1f6cf",
+    "jobid":"60081aa3aec603686a383ac4",
+    "SOP":"this is app3 for job1 of recr1",
+    "Doa":{
+        "Day":20,
+        "Mon":1,
+        "Yea":2021
+    },
+    "Doj":{
+        "Day":0,
+        "Mon":0,
+        "Yea":0
+    }
+}
+
+
+
+//NOW TODAY BACKEND SHOULD BE COMPLETED SO CHECKING THE FUNCTINALITIES
+
+
+(IF NOE CHANGE IN SCHEMA)
+
+1)REGISTER IS WORKING FINE 
+2)LOGIN IS WORKING FINE  
+
+RECRUITER
+
+    3)PROFILE IS WORKING FINE PROFILE.JS
+    4)JOBS CREATION IS WORKING FINE JOBS.js
+    5)CHECKING EDITS.JS 
+        -> DELETE A JOB (STILL NEED TO BE TESTED) SHOULD HANDLE DELETION OF APPLICATIONS OF TE JOB
+        -> EDITING PROFILE IS WORKING FINE
+    6)CHECKING APPLICATIONS.js 
+        -> To GET ALL NON REJECTED APPLICATIONS OF A JOB (WORKED FINE)
+        -> CHANGING THE STATUS(WORKED FINE)
+APPLICANT 
+
+    6)PROFILE IS WORKING FINE
+    7)SEARCH IS WORKING FINE
+    8)APPLY
+        -> APPLICANT POSTING APPLICATION (WORKED FINE)
+        -> APPLICANT SEEING ALL HIS APPLCATIONS (WORKED FINE)
+
+
+
+localhost:4000/recr/applications/?id=600811c2ca61046395d1f6cc&jid=60081d6a6a937b6b8cdc6477
+
+
+
+////geting all applications
